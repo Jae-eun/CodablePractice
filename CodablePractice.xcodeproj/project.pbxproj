@@ -15,6 +15,9 @@
 		001A3DDB220D5D5E005D81A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001A3DD9220D5D5E005D81A4 /* LaunchScreen.storyboard */; };
 		001A3DE6220D5D5E005D81A4 /* CodablePracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A3DE5220D5D5E005D81A4 /* CodablePracticeTests.swift */; };
 		001A3DF1220D5D5E005D81A4 /* CodablePracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A3DF0220D5D5E005D81A4 /* CodablePracticeUITests.swift */; };
+		001A3DFF220D62BF005D81A4 /* DustFeedback.json in Resources */ = {isa = PBXBuildFile; fileRef = 001A3DFE220D62BF005D81A4 /* DustFeedback.json */; };
+		001A3E02220D62E5005D81A4 /* DustFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A3E01220D62E5005D81A4 /* DustFeedback.swift */; };
+		001A3E04220DE336005D81A4 /* RequestFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A3E03220DE336005D81A4 /* RequestFeedback.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		001A3DEC220D5D5E005D81A4 /* CodablePracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodablePracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		001A3DF0220D5D5E005D81A4 /* CodablePracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodablePracticeUITests.swift; sourceTree = "<group>"; };
 		001A3DF2220D5D5E005D81A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001A3DFE220D62BF005D81A4 /* DustFeedback.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DustFeedback.json; sourceTree = "<group>"; };
+		001A3E01220D62E5005D81A4 /* DustFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DustFeedback.swift; sourceTree = "<group>"; };
+		001A3E03220DE336005D81A4 /* RequestFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFeedback.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,16 @@
 		001A3DCC220D5D5D005D81A4 /* CodablePractice */ = {
 			isa = PBXGroup;
 			children = (
+				001A3E00220D62C1005D81A4 /* JSON */,
 				001A3DCD220D5D5D005D81A4 /* AppDelegate.swift */,
-				001A3DCF220D5D5D005D81A4 /* ViewController.swift */,
 				001A3DD1220D5D5D005D81A4 /* Main.storyboard */,
 				001A3DD7220D5D5E005D81A4 /* Assets.xcassets */,
 				001A3DD9220D5D5E005D81A4 /* LaunchScreen.storyboard */,
 				001A3DDC220D5D5E005D81A4 /* Info.plist */,
 				001A3DD4220D5D5D005D81A4 /* CodablePractice.xcdatamodeld */,
+				001A3DCF220D5D5D005D81A4 /* ViewController.swift */,
+				001A3E01220D62E5005D81A4 /* DustFeedback.swift */,
+				001A3E03220DE336005D81A4 /* RequestFeedback.swift */,
 			);
 			path = CodablePractice;
 			sourceTree = "<group>";
@@ -126,6 +135,14 @@
 				001A3DF2220D5D5E005D81A4 /* Info.plist */,
 			);
 			path = CodablePracticeUITests;
+			sourceTree = "<group>";
+		};
+		001A3E00220D62C1005D81A4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				001A3DFE220D62BF005D81A4 /* DustFeedback.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +251,7 @@
 			files = (
 				001A3DDB220D5D5E005D81A4 /* LaunchScreen.storyboard in Resources */,
 				001A3DD8220D5D5E005D81A4 /* Assets.xcassets in Resources */,
+				001A3DFF220D62BF005D81A4 /* DustFeedback.json in Resources */,
 				001A3DD3220D5D5D005D81A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001A3E04220DE336005D81A4 /* RequestFeedback.swift in Sources */,
 				001A3DD6220D5D5D005D81A4 /* CodablePractice.xcdatamodeld in Sources */,
 				001A3DD0220D5D5D005D81A4 /* ViewController.swift in Sources */,
+				001A3E02220D62E5005D81A4 /* DustFeedback.swift in Sources */,
 				001A3DCE220D5D5D005D81A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
