@@ -17,7 +17,10 @@
 		001A3DF1220D5D5E005D81A4 /* CodablePracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A3DF0220D5D5E005D81A4 /* CodablePracticeUITests.swift */; };
 		001A3DFF220D62BF005D81A4 /* DustFeedback.json in Resources */ = {isa = PBXBuildFile; fileRef = 001A3DFE220D62BF005D81A4 /* DustFeedback.json */; };
 		001A3E02220D62E5005D81A4 /* DustFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A3E01220D62E5005D81A4 /* DustFeedback.swift */; };
-		001A3E04220DE336005D81A4 /* RequestFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A3E03220DE336005D81A4 /* RequestFeedback.swift */; };
+		001A3E08220ECCD7005D81A4 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A3E07220ECCD7005D81A4 /* JSONManager.swift */; };
+		001A3E0A220ECCE7005D81A4 /* JSONManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A3E09220ECCE7005D81A4 /* JSONManagerType.swift */; };
+		001A3E0C220ECCFA005D81A4 /* FeedbackServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A3E0B220ECCFA005D81A4 /* FeedbackServiceType.swift */; };
+		001A3E0E220ECD15005D81A4 /* FeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A3E0D220ECD15005D81A4 /* FeedbackService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +57,10 @@
 		001A3DF2220D5D5E005D81A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		001A3DFE220D62BF005D81A4 /* DustFeedback.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DustFeedback.json; sourceTree = "<group>"; };
 		001A3E01220D62E5005D81A4 /* DustFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DustFeedback.swift; sourceTree = "<group>"; };
-		001A3E03220DE336005D81A4 /* RequestFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFeedback.swift; sourceTree = "<group>"; };
+		001A3E07220ECCD7005D81A4 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
+		001A3E09220ECCE7005D81A4 /* JSONManagerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManagerType.swift; sourceTree = "<group>"; };
+		001A3E0B220ECCFA005D81A4 /* FeedbackServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackServiceType.swift; sourceTree = "<group>"; };
+		001A3E0D220ECD15005D81A4 /* FeedbackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +118,12 @@
 				001A3DD9220D5D5E005D81A4 /* LaunchScreen.storyboard */,
 				001A3DDC220D5D5E005D81A4 /* Info.plist */,
 				001A3DD4220D5D5D005D81A4 /* CodablePractice.xcdatamodeld */,
-				001A3DCF220D5D5D005D81A4 /* ViewController.swift */,
 				001A3E01220D62E5005D81A4 /* DustFeedback.swift */,
-				001A3E03220DE336005D81A4 /* RequestFeedback.swift */,
+				001A3DCF220D5D5D005D81A4 /* ViewController.swift */,
+				001A3E09220ECCE7005D81A4 /* JSONManagerType.swift */,
+				001A3E07220ECCD7005D81A4 /* JSONManager.swift */,
+				001A3E0B220ECCFA005D81A4 /* FeedbackServiceType.swift */,
+				001A3E0D220ECD15005D81A4 /* FeedbackService.swift */,
 			);
 			path = CodablePractice;
 			sourceTree = "<group>";
@@ -277,11 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				001A3E04220DE336005D81A4 /* RequestFeedback.swift in Sources */,
+				001A3E08220ECCD7005D81A4 /* JSONManager.swift in Sources */,
+				001A3E0E220ECD15005D81A4 /* FeedbackService.swift in Sources */,
 				001A3DD6220D5D5D005D81A4 /* CodablePractice.xcdatamodeld in Sources */,
 				001A3DD0220D5D5D005D81A4 /* ViewController.swift in Sources */,
 				001A3E02220D62E5005D81A4 /* DustFeedback.swift in Sources */,
+				001A3E0C220ECCFA005D81A4 /* FeedbackServiceType.swift in Sources */,
 				001A3DCE220D5D5D005D81A4 /* AppDelegate.swift in Sources */,
+				001A3E0A220ECCE7005D81A4 /* JSONManagerType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
