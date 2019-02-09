@@ -17,7 +17,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var contentsLabel: UILabel!
   
   var dustFeedbacks: [DustFeedback] = []
-  
+  let requestFeedback = RequestFeedback()
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
   
   override func viewDidAppear(_ animated: Bool) {
     NotificationCenter.default.addObserver(self, selector: #selector(didReceiveFeedbackNotification(_:)), name: DidReceiveFeedbackNotification, object: nil)
-        requestFeedbacks()
+        requestFeedback.requestDustFeedbacks()
         setLabel()
   }
   
