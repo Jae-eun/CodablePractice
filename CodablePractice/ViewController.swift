@@ -17,16 +17,18 @@ class ViewController: UIViewController {
   @IBOutlet weak var contentsLabel: UILabel!
   
   var dustFeedbacks: [DustFeedback] = []
-  let requestFeedback = RequestFeedback()
+  let jsonManager = JSONManager()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
   }
   
   override func viewDidAppear(_ animated: Bool) {
-    NotificationCenter.default.addObserver(self, selector: #selector(didReceiveFeedbackNotification(_:)), name: DidReceiveFeedbackNotification, object: nil)
-        requestFeedback.requestDustFeedbacks()
-        setLabel()
+    
+    dustFeedbacks = jsonManager.requestDustFeedbacks()
+    print(dustFeedbacks)
+    setLabel()
   }
   
   @objc func didReceiveFeedbackNotification(_ noti: Notification) {
@@ -37,10 +39,10 @@ class ViewController: UIViewController {
   }
   
   func setLabel() {
-    titleLabel.text = dustFeedbacks[0].title
-    authorLabel.text = dustFeedbacks[0].author
-    dateLabel.text = dustFeedbacks[0].date
-    contentsLabel.text = dustFeedbacks[0].contents
+    //    titleLabel.text = RequestFeedback.shared.dustFeedbacks[0].title
+    //    authorLabel.text = dustFeedbacks[0].author
+    //    dateLabel.text = dustFeedbacks[0].date
+    //    contentsLabel.text = dustFeedbacks[0].contents
   }
 }
 
